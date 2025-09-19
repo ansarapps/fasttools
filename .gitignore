@@ -221,6 +221,9 @@ docker-compose.override.yml
 # Local development
 .local
 
+# Frontend directory (separate repository)
+frontend/
+
 # Error logs
 error.log
 access.log
