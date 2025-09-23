@@ -82,14 +82,14 @@ sudo npm install -g pm2
 ### 3.1 Update Nginx Configuration
 ```bash
 # Copy nginx configuration
-sudo cp nginx.conf /etc/nginx/sites-available/fasttools
+sudo cp nginx.conf /etc/nginx/sites-available/bravetech
 
 # Update domain name in configuration
-sudo nano /etc/nginx/sites-available/fasttools
+sudo nano /etc/nginx/sites-available/bravetech
 # Replace 'your-domain.com' with your actual domain
 
 # Enable site
-sudo ln -s /etc/nginx/sites-available/fasttools /etc/nginx/sites-enabled/
+sudo ln -s /etc/nginx/sites-available/bravetech /etc/nginx/sites-enabled/
 sudo nginx -t
 sudo systemctl reload nginx
 ```
@@ -100,7 +100,7 @@ sudo systemctl reload nginx
 sudo apt install certbot python3-certbot-nginx -y
 
 # Get SSL certificate
-sudo certbot --nginx -d your-domain.com -d www.your-domain.com
+sudo certbot --nginx -d bravetech.tools -d www.bravetech.tools
 
 # Auto-renewal setup
 sudo crontab -e
@@ -113,10 +113,10 @@ sudo crontab -e
 ### 4.1 Setup Production Environment
 ```bash
 # Copy environment file
-sudo cp frontend/.env.production /etc/fasttools/.env.production
+sudo cp frontend/.env.production /etc/bravetech/.env.production
 
 # Edit configuration
-sudo nano /etc/fasttools/.env.production
+sudo nano /etc/bravetech/.env.production
 ```
 
 ### 4.2 Required Environment Variables
