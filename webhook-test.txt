@@ -1,0 +1,6 @@
+Webhook Test - $(Get-Date)
+
+This file is created to test the GitHub webhook functionality.
+If you see this file updated, it means the webhook is working properly.
+
+Test timestamp: $(Get-Date -Format "yyyy-MM-dd HH:mm:ss")
